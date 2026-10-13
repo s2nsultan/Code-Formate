@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05070d">
+    <meta name="description" content="Sultan Ansari — B.Tech CSE Data Science student, AI enthusiast and builder exploring technology, intelligent systems and new ideas.">
+    <title>Sultan Ansari — Beyond the Ordinary</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="navbar">
+        <a class="brand" href="#home" aria-label="Sultan home">
+            <span class="brand-mark">S<span>.</span></span>
+            <span>SULTAN<span class="brand-muted"> / DIGITAL UNIVERSE</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"
+                aria-expanded="false">
+            <span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#journey">Journey</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#ventures">Ventures</a>
+            <a href="#contact" class="nav-contact">Connect ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero section-wrap" id="home">
+            <div class="hero-copy reveal">
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    EXPLORING THE FUTURE, ONE IDEA AT A TIME
+                </div>
+
+                <p class="hero-intro">Hello, universe. I'm</p>
+
+                <h1>Sultan<br><span class="gradient-text">Ansari.</span></h1>
+
+                <h2 class="hero-role">
+                    Student. <span id="roleText">AI Explorer.</span>
+                </h2>
+
+                <p class="hero-description">
+                    A B.Tech CSE (Data Science) student fascinated by
+                    Artificial Intelligence, Machine Learning and the
+                    possibilities of technology. Learning, building and
+                    turning ideas into something real.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button button-primary">
+                        Explore my universe <span>↗</span>
+                    </a>
+                    <a href="#about" class="button button-secondary">
+                        Discover my story
+                    </a>
+                </div>
+
+                <div class="hero-tags">
+                    <span>AI & ML</span>
+                    <span>Data Science</span>
+                    <span>Development</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="orbit orbit-outer"></div>
+                <div class="orbit orbit-inner"></div>
+                <div class="orbit orbit-tilted"></div>
+
+                <div class="planet">
+                    <div class="planet-glow"></div>
+                    <div class="planet-core"></div>
+                </div>
+
+                <span class="floating-label label-top">
+                    <span class="mini-dot"></span> CURIOUS BY NATURE
+                </span>
+                <span class="floating-label label-bottom">
+                    BUILT FOR WHAT'S NEXT <span>✦</span>
+                </span>
+                <span class="orbit-point point-one"></span>
+                <span class="orbit-point point-two"></span>
+            </div>
+
+            <a href="#about" class="scroll-cue">
+                <span class="scroll-line"></span> SCROLL TO EXPLORE
+            </a>
+        </section>
+
+        <!-- QUICK PROFILE -->
+        <section class="quick-stats section-wrap reveal">
+            <div class="stat-item">
+                <span class="stat-label">CURRENT CHAPTER</span>
+                <strong>B.Tech</strong>
+                <span class="stat-detail">CSE · Data Science</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">FOCUS</span>
+                <strong>AI + Data</strong>
+                <span class="stat-detail">Intelligent technology</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">BASED IN</span>
+                <strong>Bihar, India</strong>
+                <span class="stat-detail">Learning without borders</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">MINDSET</span>
+                <strong>Always learning</strong>
+                <span class="stat-detail">Build · Learn · Improve</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section section-wrap" id="about">
+            <div class="section-heading reveal">
+                <span class="section-index">01 / THE PERSON</span>
+                <h2>More than a <span class="gradient-text">degree.</span></h2>
+                <p>Curiosity is where my story begins.</p>
+            </div>
+
+            <div class="about-grid">
+                <article class="glass-card about-main reveal">
+                    <span class="card-symbol">✦</span>
+                    <h3>A mind that keeps exploring.</h3>
+                    <p>
+                        I'm Sultan Ansari, a Computer Science and Data Science
+                        student with a growing interest in AI, Machine Learning,
+                        programming and technology that solves real problems.
+                    </p>
+                    <p>
+                        My journey is about more than learning syntax or
+                        collecting skills. I want to understand how things work,
+                        experiment with ideas, create useful projects and
+                        steadily become better at what I do.
+                    </p>
+                    <p>
+                        I am exploring both the technical foundations of
+                        computing and the creative side of building digital
+                        products. Every project is another opportunity to learn.
+                    </p>
+                    <button class="copy-button" data-copy="I'm Sultan Ansari, a B.Tech CSE (Data Science) student passionate about Artificial Intelligence, Machine Learning, Data Science and building useful technology.">
+                        <span>▣</span> Copy my introduction
+                    </button>
+                </article>
+
+                <div class="about-side">
+                    <article class="glass-card mini-card reveal">
+                        <span class="mini-icon">⌘</span>
+                        <h3>The builder</h3>
+                        <p>I enjoy turning concepts into working websites, applications and coding projects.</p>
+                    </article>
+                    <article class="glass-card mini-card reveal">
+                        <span class="mini-icon">◉</span>
+                        <h3>The learner</h3>
+                        <p>From C and Python to Java, databases and algorithms — I keep strengthening my foundations.</p>
+                    </article>
+                    <article class="glass-card mini-card reveal">
+                        <span class="mini-icon">✧</span>
+                        <h3>The dreamer</h3>
+                        <p>I want to explore meaningful AI solutions and grow into an AI and Data Science professional.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONALITY -->
+        <section class="section section-wrap" id="mindset">
+            <div class="section-heading reveal">
+                <span class="section-index">02 / THE MINDSET</span>
+                <h2>How I see the <span class="gradient-text">world.</span></h2>
+                <p>My perspective, based on the journey I've shared.</p>
+            </div>
+
+            <div class="values-grid">
+                <article class="value-card reveal">
+                    <span>01</span>
+                    <h3>Curiosity over comfort</h3>
+                    <p>I ask questions and explore different tools instead of staying limited to one path.</p>
+                </article>
+                <article class="value-card reveal">
+                    <span>02</span>
+                    <h3>Learn by building</h3>
+                    <p>I like applying what I learn through practical projects, experiments and problem-solving.</p>
+                </article>
+                <article class="value-card reveal">
+                    <span>03</span>
+                    <h3>Think long-term</h3>
+                    <p>I connect today's learning with bigger goals such as AI expertise, internships and professional growth.</p>
+                </article>
+                <article class="value-card reveal">
+                    <span>04</span>
+                    <h3>Improve continuously</h3>
+                    <p>I revisit mistakes, ask for step-by-step guidance and keep refining my work.</p>
+                </article>
+            </div>
+
+            <div class="honest-note reveal">
+                <span class="note-star">✦</span>
+                <p>
+                    <strong>My honest impression:</strong> You come across as curious,
+                    ambitious, practical and persistent. You care about details
+                    and want things to work properly, not just look finished.
+                    You are still exploring and learning — and that willingness
+                    to ask questions is one of your strengths. This is my
+                    impression from our conversations, not a complete judgment
+                    of who you are.
+                </p>
+            </div>
+        </section>
+
+        <!-- JOURNEY -->
+        <section class="section section-wrap" id="journey">
+            <div class="section-heading reveal">
+                <span class="section-index">03 / THE JOURNEY</span>
+                <h2>Every star has a <span class="gradient-text">beginning.</span></h2>
+                <p>The milestones and direction of my learning journey.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-meta">FOUNDATIONS</div>
+                    <h3>School & early learning</h3>
+                    <p>
+                        Completed Class X and Class XII through the Bihar School
+                        Examination Board. My academic path led me towards
+                        engineering and computing.
+                    </p>
+                    <span class="timeline-tag">BSEB · Science / Mathematics</span>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-meta">2025 — 2029</div>
+                    <h3>B.Tech in CSE (Data Science)</h3>
+                    <p>
+                        Pursuing Computer Science and Engineering with a
+                        Data Science focus at Government Engineering College
+                        Arwal, under Bihar Engineering University.
+                    </p>
+                    <span class="timeline-tag">Undergraduate journey</span>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-meta">CURRENT CHAPTER</div>
+                    <h3>Strengthening the foundations</h3>
+                    <p>
+                        Learning programming, Object-Oriented Programming
+                        with Java, Data Structures and Algorithms, databases,
+                        web fundamentals and problem-solving.
+                    </p>
+                    <span class="timeline-tag">Learn · Practice · Build</span>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-meta">THE NEXT HORIZON</div>
+                    <h3>AI, Data Science & beyond</h3>
+                    <p>
+                        Working towards AI and Data Science internship
+                        opportunities, stronger technical skills, meaningful
+                        projects and preparation for the GATE Data Science
+                        and Artificial Intelligence paper.
+                    </p>
+                    <span class="timeline-tag">An evolving goal</span>
+                </article>
+            </div>
+
+            <div class="education-card glass-card reveal">
+                <span class="section-index">EDUCATION SNAPSHOT</span>
+                <h3>Academic background</h3>
+                <div class="education-row">
+                    <span>Degree</span>
+                    <strong>B.Tech — CSE (Data Science)</strong>
+                </div>
+                <div class="education-row">
+                    <span>Institution</span>
+                    <strong>Government Engineering College Arwal</strong>
+                </div>
+                <div class="education-row">
+                    <span>University</span>
+                    <strong>Bihar Engineering University</strong>
+                </div>
+                <div class="education-row">
+                    <span>Batch</span>
+                    <strong>2025–2029</strong>
+                </div>
+                <div class="education-row">
+                    <span>Class X</span>
+                    <strong>73.4% · Bihar Board</strong>
+                </div>
+                <div class="education-row">
+                    <span>Class XII</span>
+                    <strong>60% · Bihar Board · Science</strong>
+                </div>
+                <p class="small-note">Academic details reflect information shared previously and can be updated as your journey progresses.</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section section-wrap" id="skills">
+            <div class="section-heading reveal">
+                <span class="section-index">04 / THE TOOLKIT</span>
+                <h2>Skills in <span class="gradient-text">orbit.</span></h2>
+                <p>A growing toolkit — learning levels change with practice.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="glass-card skill-group reveal">
+                    <span class="skill-icon">⌘</span>
+                    <h3>Programming</h3>
+                    <p class="skill-caption">Languages & core concepts</p>
+                    <div class="skill-chips">
+                        <span>C</span><span>C++</span><span>Python</span><span>Java</span>
+                    </div>
+                    <p class="skill-footnote">Practising programming fundamentals and OOP.</p>
+                </article>
+
+                <article class="glass-card skill-group reveal">
+                    <span class="skill-icon">◈</span>
+                    <h3>Web development</h3>
+                    <p class="skill-caption">The building blocks of the web</p>
+                    <div class="skill-chips">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <p class="skill-footnote">Building interactive and responsive experiences.</p>
+                </article>
+
+                <article class="glass-card skill-group reveal">
+                    <span class="skill-icon">✧</span>
+                    <h3>AI & Data</h3>
+                    <p class="skill-caption">My long-term direction</p>
+                    <div class="skill-chips">
+                        <span>Artificial Intelligence</span>
+                        <span>Machine Learning</span>
+                        <span>Data Science</span>
+                        <span>Analytics</span>
+                    </div>
+                    <p class="skill-footnote">Areas of interest and continued learning.</p>
+                </article>
+
+                <article class="glass-card skill-group reveal">
+                    <span class="skill-icon">▤</span>
+                    <h3>Computer science</h3>
+                    <p class="skill-caption">Foundations & productivity</p>
+                    <div class="skill-chips">
+                        <span>DSA</span><span>DBMS</span><span>Excel</span>
+                        <span>Word</span><span>PowerPoint</span>
+                    </div>
+                    <p class="skill-footnote">Developing fundamentals through coursework and practice.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section section-wrap" id="projects">
+            <div class="section-heading reveal">
+                <span class="section-index">05 / THE LAB</span>
+                <h2>Ideas made <span class="gradient-text">real.</span></h2>
+                <p>Experiments, applications and projects from my learning journey.</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 01</span>
+                        <span class="project-symbol">⌗</span>
+                    </div>
+                    <div class="project-art art-calculator">
+                        <div class="mock-calculator">
+                            <span>CALCULATOR</span>
+                            <strong>2,048<span>.</span></strong>
+                            <div class="mock-keys">
+                                <i></i><i></i><i></i><i class="key-blue"></i>
+                                <i></i><i></i><i></i><i class="key-blue"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Identiplus Calculator</h3>
+                    <p>
+                        A calculator project focused on a polished interface,
+                        everyday calculations and scientific functionality.
+                        The planned experience includes themes and calculation history.
+                    </p>
+                    <div class="project-tags"><span>JavaScript</span><span>UI Design</span><span>Math</span></div>
+                    <a href="https://github.com/s2nsultan/Calculator" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Explore repository ↗
+                    </a>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 02</span>
+                        <span class="project-symbol">◷</span>
+                    </div>
+                    <div class="project-art art-age">
+                        <div class="age-interface">
+                            <span>YOUR TIMELINE</span>
+                            <strong>20<span> years</span></strong>
+                            <div class="age-line"><i></i></div>
+                            <small>A moment in the universe</small>
+                        </div>
+                    </div>
+                    <h3>Age Calculator</h3>
+                    <p>
+                        A web app concept for calculating age, birthday
+                        countdowns, weekdays and zodiac information, with
+                        an emphasis on a clean, glass-inspired interface.
+                    </p>
+                    <div class="project-tags"><span>Python</span><span>Flask</span><span>HTML / CSS / JS</span></div>
+                    <span class="project-status">Personal development project</span>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 03</span>
+                        <span class="project-symbol">◎</span>
+                    </div>
+                    <div class="project-art art-chat">
+                        <div class="chat-window">
+                            <div class="chat-head"><i></i> StarChat <span>●</span></div>
+                            <div class="chat-bubble">Hey! What's up?</div>
+                            <div class="chat-bubble sent">Building something new ✦</div>
+                            <div class="chat-input"></div>
+                        </div>
+                    </div>
+                    <h3>StarChat</h3>
+                    <p>
+                        A WhatsApp-inspired chat interface experiment,
+                        exploring messaging layouts, frontend interactions
+                        and a familiar chat experience.
+                    </p>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <span class="project-status">Personal development project</span>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-top">
+                        <span class="project-number">PROJECT / 04</span>
+                        <span class="project-symbol">⌕</span>
+                    </div>
+                    <div class="project-art art-ai">
+                        <div class="ai-orb">AI</div>
+                        <div class="ai-rings"></div>
+                        <span class="ai-caption">DOCUMENT INTELLIGENCE</span>
+                    </div>
+                    <h3>Document Q&A with AI</h3>
+                    <p>
+                        An explored architecture for asking questions about
+                        documents using retrieval, vector search, local language
+                        models and document extraction.
+                    </p>
+                    <div class="project-tags"><span>Python</span><span>FAISS</span><span>Ollama</span><span>Streamlit</span></div>
+                    <span class="project-status">Explored technical workflow</span>
+                </article>
+            </div>
+
+            <p class="small-note reveal">
+                Project descriptions distinguish ideas, experiments and planned
+                features from verified live deployments. This portfolio does
+                not claim that every feature is complete or publicly hosted.
+            </p>
+        </section>
+
+        <!-- VENTURES -->
+        <section class="section section-wrap" id="ventures">
+            <div class="section-heading reveal">
+                <span class="section-index">06 / BUILDING BEYOND</span>
+                <h2>Ideas with <span class="gradient-text">ambition.</span></h2>
+                <p>Two ventures connected to my wider entrepreneurial interests.</p>
+            </div>
+
+            <div class="ventures-grid">
+                <article class="venture-card glass-card reveal">
+                    <div class="venture-logo neurawatt-logo">N<span>.</span></div>
+                    <span class="venture-type">ELECTRICAL DISTRIBUTION</span>
+                    <h3>Neurawatt</h3>
+                    <p>
+                        A venture I have described as working in electric
+                        panel distribution — connecting the physical world
+                        of electrical infrastructure with business ambition.
+                    </p>
+                    <a href="https://neurawatt.com" target="_blank" rel="noopener noreferrer" class="button button-secondary">
+                        Visit neurawatt.com ↗
+                    </a>
+                </article>
+
+                <article class="venture-card glass-card reveal">
+                    <div class="venture-logo zihn-logo">z<span>ihn</span><i>✦</i></div>
+                    <span class="venture-type">ARTIFICIAL INTELLIGENCE</span>
+                    <h3>Zihn AI</h3>
+                    <p>
+                        My AI-focused venture, associated with the idea of
+                        transforming concepts into AI solutions, projects
+                        and useful digital experiences.
+                    </p>
+                    <a href="https://zihn.ai" target="_blank" rel="noopener noreferrer" class="button button-secondary">
+                        Explore zihn.ai ↗
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="section section-wrap" id="certifications">
+            <div class="section-heading reveal">
+                <span class="section-index">07 / MILESTONES</span>
+                <h2>Small wins. <span class="gradient-text">Big horizons.</span></h2>
+                <p>Learning milestones shared during our conversations.</p>
+            </div>
+
+            <div class="cert-grid">
+                <article class="glass-card cert-card reveal">
+                    <span class="cert-symbol">✦</span>
+                    <div>
+                        <span class="cert-label">C PROGRAMMING</span>
+                        <h3>IIT Bombay — C Training</h3>
+                        <p>Previously reported: 95% score and 2 credits.</p>
+                    </div>
+                </article>
+                <article class="glass-card cert-card reveal">
+                    <span class="cert-symbol">◈</span>
+                    <div>
+                        <span class="cert-label">PROGRAMMING FUNDAMENTALS</span>
+                        <h3>Cisco — C Essentials 1 & 2</h3>
+                        <p>Programming learning milestones shared previously.</p>
+                    </div>
+                </article>
+            </div>
+            <p class="small-note reveal">Please verify certificate titles and details against the original credentials before publishing them as formal qualifications.</p>
+        </section>
+
+        <!-- FUTURE -->
+        <section class="section section-wrap" id="future">
+            <div class="future-panel reveal">
+                <div class="future-stars">✦ &nbsp; · &nbsp; ✧ &nbsp; · &nbsp; ✦</div>
+                <span class="section-index">08 / THE NEXT CHAPTER</span>
+                <h2>The universe is vast.<br><span class="gradient-text">So are the possibilities.</span></h2>
+                <p>
+                    My direction is to strengthen my computer science
+                    fundamentals, deepen my understanding of AI and Data
+                    Science, create meaningful projects and work towards
+                    opportunities where I can learn from real-world problems.
+                </p>
+
+                <div class="future-goals">
+                    <span>01 &nbsp; Stronger DSA foundations</span>
+                    <span>02 &nbsp; AI / Data Science projects</span>
+                    <span>03 &nbsp; Internship opportunities</span>
+                    <span>04 &nbsp; GATE DA preparation</span>
+                    <span>05 &nbsp; Build useful products</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section section-wrap contact-section" id="contact">
+            <div class="section-heading reveal">
+                <span class="section-index">09 / OPEN CONNECTION</span>
+                <h2>Let's connect across <span class="gradient-text">orbits.</span></h2>
+                <p>For technology, AI, Data Science, collaboration and learning.</p>
+            </div>
+
+            <div class="contact-card glass-card reveal">
+                <div class="contact-intro">
+                    <span class="contact-sparkle">✦</span>
+                    <h3>Good ideas begin with a conversation.</h3>
+                    <p>
+                        I'm interested in learning, sharing ideas, building
+                        useful projects and exploring opportunities in AI
+                        and Data Science.
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://github.com/s2nsultan" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">⌘</span>
+                        <span><small>CODE & PROJECTS</small><strong>GitHub</strong></span>
+                        <span class="arrow">↗</span>
+                    </a>
+                    <a href="https://zihn.ai" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">✧</span>
+                        <span><small>AI VENTURE</small><strong>Zihn AI</strong></span>
+                        <span class="arrow">↗</span>
+                    </a>
+                    <a href="https://neurawatt.com" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">◈</span>
+                        <span><small>BUSINESS VENTURE</small><strong>Neurawatt</strong></span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </div>
+                <button class="copy-button copy-profile" data-copy="Sultan Ansari | B.Tech CSE (Data Science) student at Government Engineering College Arwal, Bihar Engineering University | Interested in Artificial Intelligence, Machine Learning, Data Science and software development | GitHub: https://github.com/s2nsultan | Zihn AI: https://zihn.ai | Neurawatt: https://neurawatt.com">
+                    ▣ Copy complete profile summary
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-wrap">
+        <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">S<span>.</span></span>
+            <span>SULTAN<span class="brand-muted"> / DIGITAL UNIVERSE</span></span>
+        </a>
+        <p>Made with curiosity, code and a little cosmic imagination.</p>
+        <a href="#home" class="back-top">BACK TO THE STARS ↑</a>
+        <span class="copyright">© <span id="year"></span> Sultan Ansari</span>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard ✦</div>
+</body>
+</html>
